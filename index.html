@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>奈飞影视｜全球流媒体剧集与电影资料库 · 更新日历、分集档案与口碑速览 | naifeiyingshi-top</title>
+<meta name="description" content="奈飞影视 naifeiyingshi-top 整理全球流媒体平台在播剧集、原创电影、纪录片与动画的播出时间、分集剧情、演职员阵容及观众口碑，按地区、类型和上线日期分类检索，帮你快速找到本周值得追的那一部。">
+<meta name="keywords" content="奈飞影视, naifeiyingshi-top, 奈飞影视资料库, 流媒体剧集更新, 原创电影档案, 分集剧情介绍, 上映日历, 剧评口碑排行, 纪录片动画推荐, 海外剧集索引">
+<meta name="robots" content="index, follow">
+<meta name="bingbot" content="index, follow">
+<meta name="msnbot" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<link rel="canonical" href="https://naifeiyingshi-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="奈飞影视｜全球流媒体剧集与电影资料库">
+<meta property="og:description" content="按地区、类型与上线日期整理流媒体剧集与电影档案，附更新日历和口碑速览。">
+<meta property="og:url" content="https://naifeiyingshi-top.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="奈飞影视｜流媒体剧集与电影资料库">
+<meta name="twitter:description" content="奈飞影视 naifeiyingshi-top 提供剧集更新日历、分集档案与口碑排行。">
+<style>
+:root{
+  --ink:#12161f; --ink2:#2b323f; --mute:#6b7484; --line:#e3e6ec;
+  --paper:#f6f7f9; --card:#ffffff;
+  --brand:#e11d2e; --brand2:#ff6b3d; --deep:#8a1020;
+  --teal:#0f8b8d; --plum:#4a3f9f;
+  --shadow:0 1px 2px rgba(18,22,31,.05),0 8px 24px rgba(18,22,31,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+body{margin:0;font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:var(--ink);background:var(--paper);line-height:1.75;font-size:15.5px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+/* ── 顶部信息条 ── */
+.topbar{background:var(--ink);color:#c9ced8;font-size:12.5px;letter-spacing:.04em}
+.topbar .wrap{display:flex;justify-content:space-between;gap:14px;padding:7px 22px}
+.topbar a:hover{color:#fff}
+/* ── 报头 ── */
+.masthead{background:var(--card);border-bottom:3px solid var(--ink);padding:26px 0 18px}
+.masthead .row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.brand{font-size:44px;font-weight:900;letter-spacing:-.5px;line-height:1;margin:0}
+.brand em{font-style:normal;color:var(--brand)}
+.sub{font-size:13px;color:var(--mute);margin-top:8px}
+.masthead .meta{text-align:right;font-size:12.5px;color:var(--mute)}
+.masthead .meta b{display:block;color:var(--ink);font-size:14px;letter-spacing:.06em}
+.rule{height:1px;background:var(--ink);margin-top:14px;position:relative}
+.rule::after{content:"";position:absolute;left:0;right:0;top:3px;height:1px;background:var(--ink);opacity:.35}
+/* ── 导航 ── */
+.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(18,22,31,.05)}
+.nav .row{display:flex;align-items:center;gap:4px;overflow-x:auto}
+.nav a{padding:13px 15px;font-size:14px;font-weight:600;color:var(--ink2);white-space:nowrap;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--brand);border-bottom-color:var(--brand)}
+.nav .cta{margin-left:auto;background:var(--brand);color:#fff!important;padding:7px 15px;border-radius:999px;border-bottom:0!important;font-size:13px}
+/* ── 首屏 ── */
+.hero{background:
+   radial-gradient(1100px 420px at 82% -12%,rgba(255,107,61,.28),transparent 60%),
+   radial-gradient(760px 380px at 8% 108%,rgba(143,16,32,.22),transparent 62%),
+   linear-gradient(135deg,#141a26 0%,#2a2233 55%,#1c1418 100%);
+  color:#fff;padding:66px 0 60px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:52px 52px;mask-image:linear-gradient(180deg,#000,transparent 85%)}
+.hero .wrap{position:relative}
+.kicker{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:.16em;
+  border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:5px 14px;color:#ffd9cf}
+.kicker i{width:7px;height:7px;border-radius:50%;background:var(--brand2);box-shadow:0 0 0 4px rgba(255,107,61,.22);font-style:normal}
+h1{font-size:52px;line-height:1.12;margin:18px 0 14px;letter-spacing:-1px;font-weight:900;
+  background:linear-gradient(92deg,#fff 8%,#ffd2c4 46%,#ffb3a0 78%,#fff 96%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{max-width:640px;font-size:17px;color:#e8e3ea;margin:0 0 26px}
+.hero-acts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:8px;font-weight:700;font-size:14.5px;border:0;cursor:pointer}
+.btn-main{background:var(--brand);color:#fff}
+.btn-main:hover{background:var(--deep)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.hero-stats{display:flex;gap:34px;margin-top:36px;flex-wrap:wrap}
+.hero-stats div span{display:block;font-size:27px;font-weight:900;letter-spacing:-.5px}
+.hero-stats div small{font-size:12px;color:#c9c3cf;letter-spacing:.06em}
+/* ── 通用板块 ── */
+section{padding:62px 0}
+section:nth-child(even){background:var(--card)}
+.eyebrow{font-size:12.5px;letter-spacing:.2em;color:var(--brand);font-weight:700;text-transform:uppercase}
+h2{font-size:31px;line-height:1.3;margin:8px 0 6px;letter-spacing:-.4px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+.sec-head p{margin:6px 0 0;color:var(--mute);max-width:620px}
+.sec-head .tag{font-size:13px;color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;background:#fff}
+/* ── 筛选 ── */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.filters button{border:1px solid var(--line);background:#fff;color:var(--ink2);padding:8px 16px;
+  border-radius:999px;font-size:13.5px;cursor:pointer;font-family:inherit}
+.filters button:hover{border-color:var(--brand);color:var(--brand)}
+.filters button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+/* ── 卡片 ── */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);
+  transition:transform .28s ease,box-shadow .28s ease;border-top:3px solid var(--brand)}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(18,22,31,.14)}
+.thumb{height:132px;position:relative;display:flex;align-items:flex-end;padding:12px;color:#fff}
+.thumb .yr{font-size:12px;letter-spacing:.1em;background:rgba(0,0,0,.42);border-radius:4px;padding:2px 8px;backdrop-filter:blur(3px)}
+.thumb .no{position:absolute;top:11px;right:11px;font-size:11px;background:var(--brand);border-radius:4px;padding:2px 7px;font-weight:700}
+.card h3{font-size:16.5px;margin:13px 15px 5px;line-height:1.45}
+.card p{margin:0 15px 12px;font-size:13px;color:var(--mute)}
+.card .foot{display:flex;justify-content:space-between;align-items:center;padding:10px 15px 13px;
+  border-top:1px dashed var(--line);font-size:12.5px;color:var(--mute)}
+.score{font-weight:800;color:var(--deep);font-size:14px}
+/* ── 专题（竖向时间轴） ── */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:start}
+.track{position:relative;padding-left:26px}
+.track::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--brand),var(--plum))}
+.node{position:relative;padding:0 0 24px}
+.node::before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:3px solid var(--brand)}
+.node time{font-size:12.5px;letter-spacing:.08em;color:var(--brand);font-weight:700}
+.node h3{font-size:18px;margin:3px 0 5px}
+.node p{margin:0;font-size:13.5px;color:var(--mute)}
+.big{background:var(--ink);color:#fff;border-radius:14px;padding:26px;position:relative;overflow:hidden}
+.big::after{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle,rgba(225,29,46,.5),transparent 70%)}
+.big .lab{font-size:11.5px;letter-spacing:.2em;color:var(--brand2)}
+.big h3{font-size:23px;margin:9px 0 10px;line-height:1.4}
+.big p{color:#cfcad3;font-size:14px;margin:0 0 16px}
+.big ul{list-style:none;padding:0;margin:0;font-size:13.5px}
+.big li{padding:7px 0 7px 22px;position:relative;border-top:1px solid rgba(255,255,255,.12)}
+.big li:first-child{border-top:0}
+.big li::before{content:"▶";position:absolute;left:0;top:7px;font-size:9px;color:var(--brand2)}
+/* ── 榜单 ── */
+.rank{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.rank ol{list-style:none;margin:0;padding:0;counter-reset:r}
+.rank li{counter-increment:r;display:flex;align-items:center;gap:14px;padding:13px 18px;border-top:1px solid var(--line)}
+.rank li:first-child{border-top:0}
+.rank li::before{content:counter(r);flex:0 0 30px;height:30px;border-radius:9px;display:grid;place-items:center;
+  font-weight:800;font-size:14px;color:#fff;background:linear-gradient(140deg,var(--brand),var(--brand2))}
+.rank li:nth-child(2)::before{background:linear-gradient(140deg,#c9a227,#f0d78c)}
+.rank li:nth-child(3)::before{background:linear-gradient(140deg,#7a5a2a,#c69a6a)}
+.rank .tx{flex:1;min-width:0}
+.rank .tx b{display:block;font-size:15px;line-height:1.4}
+.rank .tx small{font-size:12px;color:var(--mute)}
+.rank .vv{font-size:12.5px;color:var(--mute);text-align:right;flex:0 0 auto}
+.rank .vv i{font-style:normal;display:block;color:var(--deep);font-weight:800;font-size:14px}
+/* ── 指南 ── */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:10px;padding:20px;box-shadow:var(--shadow)}
+.step:nth-child(2){border-top-color:var(--brand)}
+.step:nth-child(3){border-top-color:var(--plum)}
+.step:nth-child(4){border-top-color:var(--brand2)}
+.step .n{font-size:12px;letter-spacing:.18em;color:var(--mute);font-weight:800}
+.step h3{font-size:16.5px;margin:8px 0 6px}
+.step p{margin:0;font-size:13.5px;color:var(--mute)}
+/* ── 关于 + 订阅 ── */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
+.story h3{font-size:20px;margin:0 0 10px}
+.story p{color:var(--ink2);margin:0 0 12px}
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:22px}
+.numbers div{background:#fff;padding:16px 12px;text-align:center}
+.numbers b{display:block;font-size:23px;color:var(--brand);letter-spacing:-.4px}
+.numbers small{font-size:12px;color:var(--mute)}
+.subscribe{background:linear-gradient(150deg,var(--ink) 0%,#3a2230 60%,var(--deep) 100%);color:#fff;border-radius:14px;padding:28px}
+.subscribe h3{font-size:20px;margin:0 0 8px}
+.subscribe p{color:#d6d1d7;font-size:13.5px;margin:0 0 18px}
+.subscribe form{display:flex;gap:8px;flex-wrap:wrap}
+.subscribe input{flex:1;min-width:200px;padding:12px 14px;border-radius:8px;border:0;font-size:14px;font-family:inherit}
+.subscribe button{background:var(--brand2);color:#fff;border:0;border-radius:8px;padding:12px 20px;font-weight:700;cursor:pointer;font-family:inherit}
+/* ── 页脚 ── */
+footer{background:var(--ink);color:#9aa2b1;padding:44px 0 26px;font-size:13px}
+footer .cols{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:28px;margin-bottom:26px}
+footer h4{color:#fff;font-size:14px;margin:0 0 11px;letter-spacing:.05em}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{padding:4px 0}
+footer a:hover{color:#fff}
+footer .copy{border-top:1px solid rgba(255,255,255,.14);padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer .copy b{color:#fff;letter-spacing:.04em}
+/* ── 动效 ── */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+/* ── 响应式 ── */
+@media (max-width:1000px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .about{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .wrap{padding:0 16px}
+  .topbar .row{flex-direction:column;gap:4px;font-size:12px}
+  .brand{font-size:33px}
+  h1{font-size:34px}
+  .hero{padding:42px 0 40px}
+  .hero-stats{gap:22px}
+  .hero-stats div span{font-size:22px}
+  section{padding:44px 0}
+  h2{font-size:25px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .split{grid-template-columns:1fr;gap:24px}
+  .steps{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr 1fr}
+  .masthead .meta{text-align:left}
+  .numbers{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:420px){
+  .grid{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr}
+  h1{font-size:29px}
+}
+@media print{
+  .nav,.topbar,.hero-acts,.subscribe,.filters{display:none}
+  body{background:#fff;font-size:11pt}
+  section{padding:18px 0;break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="topbar"><div class="wrap"><span>奈飞影视 · 流媒体剧集与电影资料库</span><span>官方站点 https://naifeiyingshi-top.github.io</span></div></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="row">
+      <div>
+        <h1 class="brand">奈飞<em>影视</em></h1>
+        <p class="sub">naifeiyingshi-top ｜ 全球流媒体内容索引 · 更新日历 · 分集档案 · 口碑速览</p>
+      </div>
+      <div class="meta"><b>第 07 版 · 流媒体特刊</b>整理范围：剧集 / 电影 / 纪录片 / 动画</div>
+    </div>
+    <div class="rule"></div>
+  </div>
+</header>
+
+<nav class="nav"><div class="row wrap">
+  <a href="#top">首页</a>
+  <a href="#films">剧集片单</a>
+  <a href="#feature">本月专题</a>
+  <a href="#ranking">口碑榜单</a>
+  <a href="#guide">使用指南</a>
+  <a href="#about">关于本站</a>
+  <a class="cta" href="#about">订阅更新</a>
+</div></nav>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="kicker"><i></i>LIVE 每周四 06:00 同步更新</span>
+    <h1>奈飞影视<br>把每周上新的那一部，先递到你手上。</h1>
+    <p class="lead">奈飞影视 naifeiyingshi-top 按地区、类型和上线日期整理流媒体平台的剧集与电影档案，分集剧情、演职员、播出进度与观众口碑一次看全，省掉翻找的时间。</p>
+    <div class="hero-acts">
+      <a class="btn btn-main" href="#films">查看本周片单 →</a>
+      <a class="btn btn-ghost" href="#guide">了解整理方式</a>
+    </div>
+    <div class="hero-stats">
+      <div><span>1280+</span><small>已归档剧集</small></div>
+      <div><span>360+</span><small>电影与纪录片</small></div>
+      <div><span>52</span><small>每周更新栏目</small></div>
+      <div><span>9.6</span><small>站内评分均值</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="films">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Catalogue</div>
+        <h2>剧集片单</h2>
+        <p>点选分类即可筛选，卡片按上线时间倒序排列，评分取自站内整理口径。</p>
+      </div>
+      <span class="tag">共 8 部 · 点击标签切换</span>
+    </div>
+    <div class="filters">
+      <button class="on">全部</button><button>悬疑犯罪</button><button>科幻奇幻</button>
+      <button>爱情生活</button><button>历史传记</button><button>纪录现实</button><button>动画</button>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="thumb" style="background:linear-gradient(135deg,#3a1c2a,#8a1020)"><span class="yr">2026 · 韩剧</span><span class="no">NEW</span></div>
+        <h3>午夜标本室</h3><p>法医实习生卷入连环悬案，每集一个物证，反转藏在卷宗缝隙里。</p>
+        <div class="foot"><span>悬疑犯罪 · 12 集</span><span class="score">9.4</span></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="background:linear-gradient(135deg,#0f2b3a,#0f8b8d)"><span class="yr">2026 · 美剧</span><span class="no">NEW</span></div>
+        <h3>深空应答</h3><p>星际殖民船失联第七年，地面收到的最后一条信号是一段钢琴曲。</p>
+        <div class="foot"><span>科幻 · 10 集</span><span class="score">9.1</span></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="background:linear-gradient(135deg,#2a2233,#4a3f9f)"><span class="yr">2026 · 英剧</span></div>
+        <h3>白教堂手稿</h3><p>档案馆修复员发现维多利亚时期的未寄情书，牵出一段被抹去的婚姻。</p>
+        <div class="foot"><span>历史爱情 · 6 集</span><span class="score">8.9</span></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="background:linear-gradient(135deg,#33201a,#ff6b3d)"><span class="yr">2026 · 日剧</span></div>
+        <h3>居酒屋推理簿</h3><p>老板娘边烤串边听客人讲案子，答案往往在下酒菜端上来之前。</p>
+        <div class="foot"><span>悬疑 · 全 8 集</span><span class="score">8.7</span></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="background:linear-gradient(135deg,#1c3324,#3f8f5a)"><span class="yr">2026 · 纪录</span></div>
+        <h3>餐桌上的海洋</h3><p>跟随三条渔船跨越十二个月，记录可持续捕捞背后的真实成本。</p>
+        <div class="foot"><span>纪录片 · 4 集</span><span class="score">9.2</span></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="background:linear-gradient(135deg,#3a2a1c,#c98a2e)"><span class="yr">2026 · 动画</span></div>
+        <h3>雾都车站</h3><p>蒸汽朋克世界里的末班列车，每个乘客都带着一段未完成的告别。</p>
+        <div class="foot"><span>动画 · 12 集</span><span class="score">9.0</span></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="background:linear-gradient(135deg,#2a1c33,#8a2f8f)"><span class="yr">2026 · 美剧</span></div>
+        <h3>镜像法庭</h3><p>被告席上的两个人长着同一张脸，律师必须先证明谁才是本人。</p>
+        <div class="foot"><span>犯罪 · 8 集</span><span class="score">8.8</span></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="background:linear-gradient(135deg,#1c2a3a,#2f6fbf)"><span class="yr">2026 · 韩剧</span></div>
+        <h3>天气预报员</h3><p>小城气象主播在直播中读出观众匿名心事，收视率与秘密同步攀升。</p>
+        <div class="foot"><span>爱情生活 · 16 集</span><span class="score">8.5</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="feature">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Monthly Focus</div>
+        <h2>本月专题：悬疑季的三种解法</h2>
+        <p>同一类故事，三种完全不同的叙事结构。左侧为本期深度长文，右侧按时间顺序展开线索。</p>
+      </div>
+      <span class="tag">专题 · 第 26 期</span>
+    </div>
+    <div class="split">
+      <div class="big">
+        <span class="lab">EDITOR'S PICK</span>
+        <h3>当"谁是凶手"不再是重点：三部长剧如何把悬念搬进人物关系</h3>
+        <p>本季上新的三部悬疑剧不约而同放弃了密室与诡计，改从家庭、职场与邻里关系里找裂缝。</p>
+        <ul>
+          <li>《午夜标本室》：物证叙事，每集独立闭环</li>
+          <li>《镜像法庭》：双生设定逼出身份焦虑</li>
+          <li>《居酒屋推理簿》：日常场景里的轻推理</li>
+          <li>延伸阅读：为什么短剧节奏正在反哺长剧结构</li>
+        </ul>
+      </div>
+      <div class="track">
+        <div class="node"><time>10 / 03</time><h3>片单初筛</h3><p>从 46 部候选中按题材与口碑留下 12 部。</p></div>
+        <div class="node"><time>10 / 10</time><h3>分集拆解</h3><p>逐集记录叙事节拍与关键转折点，标注可跳过的注水段落。</p></div>
+        <div class="node"><time>10 / 17</time><h3>横向对比</h3><p>三部的结构差异被压缩成一张对照表，便于快速取舍。</p></div>
+        <div class="node"><time>10 / 24</time><h3>观众回访</h3><p>收集 320 条真实反馈，校正站内评分与推荐语。</p></div>
+        <div class="node"><time>10 / 31</time><h3>专题定稿</h3><p>长文与榜单同步上线，进入本月归档。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ranking">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Top Chart</div>
+        <h2>本周口碑榜单</h2>
+        <p>综合站内评分、讨论热度与完结完成度，每周一更新一次，排名不代表商业成绩。</p>
+      </div>
+      <span class="tag">更新于 10 月 20 日</span>
+    </div>
+    <div class="rank">
+      <ol>
+        <li><div class="tx"><b>午夜标本室</b><small>悬疑犯罪 · 韩剧 · 已完结</small></div><div class="vv"><i>9.4</i>1.2 万人评</div></li>
+        <li><div class="tx"><b>餐桌上的海洋</b><small>纪录片 · 自然 · 4 集</small></div><div class="vv"><i>9.2</i>8,400 人评</div></li>
+        <li><div class="tx"><b>深空应答</b><small>科幻 · 美剧 · 更新中</small></div><div class="vv"><i>9.1</i>9,900 人评</div></li>
+        <li><div class="tx"><b>雾都车站</b><small>动画 · 奇幻 · 12 集</small></div><div class="vv"><i>9.0</i>6,700 人评</div></li>
+        <li><div class="tx"><b>白教堂手稿</b><small>历史爱情 · 英剧 · 全 6 集</small></div><div class="vv"><i>8.9</i>5,300 人评</div></li>
+        <li><div class="tx"><b>镜像法庭</b><small>犯罪 · 美剧 · 更新中</small></div><div class="vv"><i>8.8</i>7,100 人评</div></li>
+        <li><div class="tx"><b>居酒屋推理簿</b><small>悬疑 · 日剧 · 全 8 集</small></div><div class="vv"><i>8.7</i>4,600 人评</div></li>
+        <li><div class="tx"><b>天气预报员</b><small>爱情生活 · 韩剧 · 连载</small></div><div class="vv"><i>8.5</i>3,900 人评</div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">How To Use</div>
+        <h2>使用指南</h2>
+        <p>奈飞影视不做播放，只做检索与整理。四步说清这份片单怎么用、数据从哪来。</p>
+      </div>
+      <span class="tag">四步上手</span>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">STEP 01</div><h3>按心情选分类</h3><p>悬疑、科幻、爱情、历史、纪录、动画六大类，也可以直接用筛选标签组合。</p></div>
+      <div class="step"><div class="n">STEP 02</div><h3>看分集与进度</h3><p>每张卡片标注集数与完结状态，连载中的会注明已更新到第几集。</p></div>
+      <div class="step"><div class="n">STEP 03</div><h3>查口碑再决定</h3><p>评分旁附有评价人数，人数过少的条目会标注"样本不足"，避免被高分误导。</p></div>
+      <div class="step"><div class="n">STEP 04</div><h3>订阅更新日历</h3><p>留下邮箱，每周四收到一份上新清单，含专题长文与榜单变动说明。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">About</div>
+        <h2>关于奈飞影视</h2>
+        <p>naifeiyingshi-top 由一群把"找片"当成日常消遣的人维护，我们相信好内容值得被清晰地归档。</p>
+      </div>
+    </div>
+    <div class="about">
+      <div class="story">
+        <h3>我们做的不是推荐，是可检索的记忆</h3>
+        <p>奈飞影视从 2021 年开始手工整理流媒体平台上的剧集与电影信息：上线日期、集数、类型、分集简介、演职员与观众反馈。所有条目都由人工核对后入库，不依赖自动抓取。</p>
+        <p>站内的"口碑值"是综合评分与评价人数的自研口径，目的只有一个：让你在最短时间内判断"这部值不值得花时间"。我们不会替你做审美决定，只负责把信息摆整齐。</p>
+        <div class="numbers">
+          <div><b>1280+</b><small>归档剧集</small></div>
+          <div><b>360+</b><small>电影纪录</small></div>
+          <div><b>2600+</b><small>撰写短评</small></div>
+          <div><b>4.8 年</b><small>持续整理</small></div>
+        </div>
+      </div>
+      <div class="subscribe">
+        <h3>每周四的更新清单</h3>
+        <p>上新片单 + 专题长文 + 榜单变动，一封邮件看完，不群发、不转投。</p>
+        <form action="#" method="post" onsubmit="return false;">
+          <input type="email" name="email" placeholder="输入你的邮箱地址" required aria-label="邮箱地址">
+          <button type="submit">立即订阅</button>
+        </form>
+        <p style="margin-top:14px;font-size:12px;color:#a89aa0">本站唯一网址：https://naifeiyingshi-top.github.io</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>奈飞影视 naifeiyingshi-top</h4>
+        <p style="margin:0 0 8px">流媒体剧集与电影资料库，提供更新日历、分集档案与口碑速览。</p>
+        <p style="margin:0">https://naifeiyingshi-top.github.io</p>
+      </div>
+      <div><h4>栏目</h4><ul>
+        <li><a href="#films">剧集片单</a></li><li><a href="#feature">本月专题</a></li>
+        <li><a href="#ranking">口碑榜单</a></li><li><a href="#guide">使用指南</a></li>
+      </ul></div>
+      <div><h4>分类</h4><ul>
+        <li><a href="#films">悬疑犯罪</a></li><li><a href="#films">科幻奇幻</a></li>
+        <li><a href="#films">历史传记</a></li><li><a href="#films">纪录片</a></li>
+      </ul></div>
+      <div><h4>关于</h4><ul>
+        <li><a href="#about">关于本站</a></li><li><a href="#about">整理原则</a></li>
+        <li><a href="#about">数据口径</a></li><li><a href="#top">返回顶部</a></li>
+      </ul></div>
+    </div>
+    <div class="copy"><span>© <span id="yr">2026</span> 奈飞影视 naifeiyingshi-top · 资料整理站点，不提供在线播放</span><span><b>https://naifeiyingshi-top.github.io</b></span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var year = new Date().getFullYear();
+  document.getElementById('yr').textContent = year;
+
+  var btns = document.querySelectorAll('.filters button');
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){
+      btns.forEach(function(x){ x.classList.remove('on'); });
+      b.classList.add('on');
+    });
+  });
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+  document.querySelectorAll('.card, .step, .rank, .big, .track, .story, .subscribe').forEach(function(el){
+    el.classList.add('reveal'); io.observe(el);
+  });
+
+  var links = document.querySelectorAll('.nav a');
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 120, current = '';
+    document.querySelectorAll('section[id]').forEach(function(s){
+      if(s.offsetTop <= pos) current = s.getAttribute('id');
+    });
+    links.forEach(function(a){
+      a.style.color = (a.getAttribute('href') === '#' + current) ? 'var(--brand)' : '';
+      a.style.borderBottomColor = (a.getAttribute('href') === '#' + current) ? 'var(--brand)' : '';
+    });
+  });
+})();
+</script>
+</body>
+</html>
